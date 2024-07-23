@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* Start Header Section*/
+body {
+  background-color: white;
+  margin: 20px;
+  margin-bottom: 30px;
+}
+
+header img {
+  width: 50px;
+  margin: 10px 38px 20px 38px;
+}
+
+header span {
+  position: absolute;
+  top: 50px;
+  left: 120px;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+/* End Header Section*/
+
+/* Start Choose Section*/
+
+input[type="radio"] {
+  display: none;
+}
+
+/* Start Main Section*/
+.main {
+  width: 280px;
+  height: 280px;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-left: 80px;
+  box-shadow: 10px 10px 20px rgba(141, 137, 137, 0.473);
+  position: relative;
+}
+
+.case,
+.strap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: background-image 1s ease-in-out;
+}
+
+.series {
+  color: red;
+  margin-top: 25px;
+  margin-left: 200px;
+}
+
+/* End Main Section*/
+
+.choice {
+  position: absolute;
+  left: 560px;
+  top: 270px;
+}
+
+.straight_line {
+  width: 440px;
+  border: 1px solid gray;
+}
+
+label img {
+  width: 60px;
+  margin: 20px 10px;
+  cursor: pointer;
+}
+
+/* Start Save Button */
+button {
+  width: 80px;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: blue;
+  border-color: transparent;
+  color: white;
+  margin-left: 1050px;
+  margin-top: 50px;
+}
+/* End Save Button */
+
+/* Case Change */
+#case1:checked ~ .main .case {
+  background-image: url("./cases/case1.png");
+}
+
+#case2:checked ~ .main .case {
+  background-image: url("./cases/case2.png");
+}
+
+#case3:checked ~ .main .case {
+  background-image: url("./cases/case3.png");
+}
+
+#case4:checked ~ .main .case {
+  background-image: url("./cases/case4.png");
+}
+
+#case5:checked ~ .main .case {
+  background-image: url("./cases/case5.png");
+}
+
+/* Strap Change */
+#strap1:checked ~ .main .strap {
+  background-image: url("./straps/strap1.png");
+}
+
+#strap2:checked ~ .main .strap {
+  background-image: url("./straps/strap2.png");
+}
+
+#strap3:checked ~ .main .strap {
+  background-image: url("./straps/strap3.png");
+}
+
+#strap4:checked ~ .main .strap {
+  background-image: url("./straps/strap4.png");
+}
+
+#strap5:checked ~ .main .strap {
+  background-image: url("./straps/strap5.png");
+}
+/* End Choose Section*/
+
+/* Cusor Typing Animation */
+
+.container1 {
+  margin-left: 38px;
+  display: inline-block;
+}
+
+.container2 {
+  margin-left: 90px;
+  display: inline-block;
+}
+
+.typed-out1,
+.typed-out2 {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-top: 10px;
+  border-right: 0.15em solid black;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2.5s steps(25, end) forwards, blinking 1s infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinking {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: black;
+  }
+}
